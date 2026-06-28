@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranjith| Portfolio</title>
+    
+    <!-- Google Fonts: Inter for a clean, modern tech aesthetic -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Link to our upcoming CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Animated Background Canvas -->
+    <div class="bg-animation" id="bg-canvas"></div>
+
+    <!-- Glassmorphism Navbar -->
+    <nav id="navbar" class="glass-nav">
+        <div class="nav-container">
+            <a href="#home" class="logo">Ranjith<span>.dev</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#timeline">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content fade-in">
+            <p class="greeting">Hi, my name is</p>
+            <h1 class="name">Azlan.</h1>
+            <!-- The span below will be targeted by our JS typing effect -->
+            <h2 class="typing-container">I build <span class="typing-text"></span><span class="cursor">&nbsp;</span></h2>
+            <p class="bio">
+                Computer Science student specializing in AI/ML with a strong focus on Cloud Engineering and DevOps. I design scalable infrastructure and intelligent systems.
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary-btn">View My Work</a>
+                <a href="https://github.com/yourusername" target="_blank" class="btn secondary-btn"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding">
+        <h2 class="section-title">Technical Arsenal</h2>
+        <div class="skills-grid">
+            <!-- Skill Cards -->
+            <div class="skill-card slide-up">
+                <i class="fab fa-python"></i>
+                <h3>Python / AI</h3>
+                <p>Pandas, NumPy, Machine Learning</p>
+            </div>
+            <div class="skill-card slide-up">
+                <i class="fab fa-aws"></i>
+                <h3>Cloud / DevOps</h3>
+                <p>AWS (EC2, S3), Docker, Terraform</p>
+            </div>
+            <div class="skill-card slide-up">
+                <i class="fas fa-code-branch"></i>
+                <h3>CI/CD</h3>
+                <p>GitHub Actions, Automated Pipelines</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="section-padding">
+        <h2 class="section-title">Journey</h2>
+        <div class="timeline-container">
+            <div class="timeline-item fade-in">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Full-Stack Deployment</h3>
+                    <span class="date">May 2026</span>
+                    <p>Deployed a comprehensive Flask application using AWS Elastic Beanstalk with automated CI/CD via GitHub Actions.</p>
+                </div>
+            </div>
+            <div class="timeline-item fade-in">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Smart Interviews Training</h3>
+                    <span class="date">Mid 2026</span>
+                    <p>Participated in intensive offline technical training program focused on advanced algorithms and problem-solving.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="project-grid">
+            <!-- Project Card 1 -->
+            <div class="project-card fade-in">
+                <div class="project-img">
+                    <!-- Placeholder for actual project image -->
+                    <div class="img-placeholder">Project Alpha</div>
+                </div>
+                <div class="project-info">
+                    <h3>Cloud Infrastructure Provisioning</h3>
+                    <p>Infrastructure as code project using Terraform to automate the deployment of scalable AWS resources.</p>
+                    <div class="project-tech">
+                        <span>Terraform</span>
+                        <span>AWS</span>
+                    </div>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                </div>
+            </div>
+            <!-- Project Card 2 -->
+            <div class="project-card fade-in">
+                <div class="project-img">
+                    <div class="img-placeholder">Project Beta</div>
+                </div>
+                <div class="project-info">
+                    <h3>Predictive ML Model</h3>
+                    <p>A Python-based machine learning model utilizing Pandas and NumPy to analyze and predict dataset trends.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Scikit-Learn</span>
+                    </div>
+                    <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="contact-container fade-in">
+            <h2 class="section-title">Get In Touch</h2>
+            <p>I'm currently open to new opportunities in Cloud Engineering and AI/ML. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+            <a href="mailto:your.email@example.com" class="btn primary-btn">Say Hello</a>
+            
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Built from scratch by Azlan &copy; 2026</p>
+    </footer>
+
+    <!-- Link to our upcoming JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
